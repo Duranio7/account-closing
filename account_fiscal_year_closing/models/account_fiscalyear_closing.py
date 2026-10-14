@@ -50,10 +50,8 @@ class AccountFiscalyearClosing(models.Model):
         readonly=True,
         states={"draft": [("readonly", False)]},
     )
-    chart_template_id = fields.Many2one(
-        comodel_name="account.chart.template",
-        string="Chart template",
-        related="company_id.chart_template_id",
+    chart_template = fields.Selection(
+        related="company_id.chart_template",
         readonly=True,
     )
     state = fields.Selection(
@@ -91,7 +89,7 @@ class AccountFiscalyearClosing(models.Model):
     closing_template_id = fields.Many2one(
         comodel_name="account.fiscalyear.closing.template",
         string="Closing template",
-        domain="[('chart_template_ids', '=', chart_template_id)]",
+        domain="[('chart_template', '=', chart_template)]",
         readonly=True,
         states={"draft": [("readonly", False)]},
     )
