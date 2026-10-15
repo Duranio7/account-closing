@@ -88,7 +88,7 @@ msgid "Accounts mapping"
 msgstr "Hesap eşlemelesi"
 
 #. module: account_fiscal_year_closing
-#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscalyear_closing_template__chart_template_ids
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscalyear_closing_template__chart_template
 msgid "Available for"
 msgstr "Uygun"
 
@@ -131,7 +131,7 @@ msgid "Cancelled"
 msgstr "İptal Edildi"
 
 #. module: account_fiscal_year_closing
-#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscalyear_closing__chart_template_id
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscalyear_closing__chart_template
 msgid "Chart template"
 msgstr "Plan Şablonu"
 
@@ -799,7 +799,7 @@ msgid "State"
 msgstr "Durum"
 
 #. module: account_fiscal_year_closing
-#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscalyear_closing__chart_template_id
+#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscalyear_closing__chart_template
 msgid "The chart template for the company (if any)"
 msgstr "Şirket için plan şablonu (varsa)"
 
